@@ -54,8 +54,8 @@ class HotClaimer(Claimer):
             self.launch_iframe()
             self.increase_step()
 
-            xpath = "//button[p[contains(text(), 'Log in')]]"
-            target_element = self.move_and_click(xpath, 30, False, "find the HereWallet log-in button", "08", "visible")
+            xpath = "//button[p[contains(text(), 'Import account')]]"
+            target_element = self.move_and_click(xpath, 30, False, "find the HereWallet Import account button", "08", "visible")
             self.driver.execute_script("arguments[0].click();", target_element)
             self.increase_step()
 
